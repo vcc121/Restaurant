@@ -43,7 +43,7 @@ public class PurchaseManager implements HasMenu, Serializable {
 
             if (input.equals("0")) {
                 keepGoing = false;
-            } else if (input.equals(String.valueOf(viewCartOption))) {
+            } else if (input.equals(String.valueOf(viewOrderOption))) {
                 viewOrder();
             } else if (input.equals(String.valueOf(checkoutOption))) {
                 checkout();
