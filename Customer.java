@@ -3,10 +3,12 @@ import java.io.*;
 
 public class Customer extends User {
     protected Account checking;
+    protected PurchaseManager purchaseManager;
 
     public Customer(String userName, String password) {
         super(userName, password);
         this.account = new Account();
+        this.purchaseManager = new PurchaseManager();
     }
 
 
@@ -22,7 +24,7 @@ public class Customer extends User {
 
     public String menu() {
         return """
-            Account Menu
+            Customer Menu
             0) Exit
             1) Manage Account
             2) Get some eats!

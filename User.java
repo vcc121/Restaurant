@@ -8,7 +8,7 @@ public abstract class User implements HasMenu, Serializable {
     public User(String userName, String password) {
     this.userName = userName;
     this.password = password;
-}
+    }
 
     public boolean login(){
         Scanner input = new Scanner(System.in);
@@ -59,3 +59,4 @@ public abstract class User implements HasMenu, Serializable {
     public String getPassword() {
         return this.password;
     }
+}

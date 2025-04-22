@@ -5,6 +5,7 @@ Early pseudo is included in UML/proposal
 
   - I've noticed my UML for Account does not feature a setBalance method, but it is supposed to, so I am writing that here.
 
-  - Additionally, I think It will be easier to take Customer.java from the bank program, rather than having all of it as a part of User. So, despite not being part of the UML, this will be another key piece.
+  - Additionally, I think It will be easier to take Customer.java from the bank program, rather than having all of it as a part of User. So, despite not being part of the UML, this will be another key piece, and a new class.
 
   - For PurchaseManager, I think I will have a menu for the user, and they can add items onto their order, which will be a list. The items will have corresponding prices which will be added to their order sum. This sum will then be deducted from their account upon purchase, unless their balance is less than the order price, in which case the order will be cancelled.
+    - To my knowledge, I think I can best accomplish this by using two arrays, one for food names and the other for food prices. This way, I can print the menu with a for loop, as well as the prices, and they can be easily accessed to add to the customer's order. Additionally, the total price will be a sum of the prices in the customer's order.
