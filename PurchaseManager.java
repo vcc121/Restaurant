@@ -14,18 +14,21 @@ public class PurchaseManager implements HasMenu, Serializable {
 
     private List<Integer> order = new ArrayList<>();
 
+    private int viewOrderOption = foodNames.length + 1;
+    private int checkoutOption = foodNames.length + 2;
+    // These ints allow for the checkout and view order options to move dynamically with the length of the menu.
+
     public PurchaseManager(Customer customer) {
         this.customer = customer;
     }
 
     public String menu() {
-        StringBuilder sb = new StringBuilder("Food Menu:\n");
+        StringBuilder sb = new StringBuilder("Food Menu:\n 0) Exit\n");
         for (int i = 0; i < foodNames.length; i++) {
             sb.append((i + 1) + ") " + foodNames[i] + " - $" + String.format("%.2f", foodPrices[i]) + "\n");
         }
-        sb.append("6) View Order\n");
-        sb.append("7) Checkout\n");
-        sb.append("0) Exit\n");
+        sb.append((viewOrderOption) ") View Order\n");
+        sb.append((checkoutOption) + ") Checkout\n");
         sb.append("Choose an option: ");
         return sb.toString();
     }
@@ -40,9 +43,9 @@ public class PurchaseManager implements HasMenu, Serializable {
 
             if (input.equals("0")) {
                 keepGoing = false;
-            } else if (input.equals("6")) {
+            } else if (input.equals(String.valueOf(viewCartOption))) {
                 viewOrder();
-            } else if (input.equals("7")) {
+            } else if (input.equals(String.valueOf(checkoutOption))) {
                 checkout();
             } else {
                 int choice = -1;
