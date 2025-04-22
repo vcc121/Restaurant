@@ -14,8 +14,8 @@ public class PurchaseManager implements HasMenu, Serializable {
 
     private List<Integer> order = new ArrayList<>();
 
-    private int viewOrderOption = foodNames.length + 1;
-    private int checkoutOption = foodNames.length + 2;
+    int viewOrderOption = foodNames.length + 1;
+    int checkoutOption = foodNames.length + 2;
     // These ints allow for the checkout and view order options to move dynamically with the length of the menu.
 
     public PurchaseManager(Customer customer) {
