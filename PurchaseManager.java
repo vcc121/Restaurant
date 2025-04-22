@@ -23,13 +23,11 @@ public class PurchaseManager implements HasMenu, Serializable {
     }
 
     public String menu() {
-        int viewOrderOption = foodNames.length + 1;
-        int checkoutOption = foodNames.length + 2;
         StringBuilder sb = new StringBuilder("Food Menu:\n 0) Exit\n");
         for (int i = 0; i < foodNames.length; i++) {
             sb.append((i + 1) + ") " + foodNames[i] + " - $" + String.format("%.2f", foodPrices[i]) + "\n");
         }
-        sb.append((viewOrderOption) ") View Order\n");
+        sb.append((foodNames.length + 1) ") View Order\n");
         sb.append((checkoutOption) + ") Checkout\n");
         sb.append("Choose an option: ");
         return sb.toString();
