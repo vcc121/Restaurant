@@ -4,7 +4,7 @@ import java.io.*;
 public class Restaurant implements HasMenu, Serializable {
 
     CustomerList customers = new CustomerList();
-    Scanner scanner = new Scanner(System.in);
+    transient Scanner scanner = new Scanner(System.in);
 
     public class CustomerList extends ArrayList<Customer> {
 
