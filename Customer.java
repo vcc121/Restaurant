@@ -8,7 +8,7 @@ public class Customer extends User {
     public Customer(String userName, String password) {
         super(userName, password);
         this.account = new Account();
-        this.purchaseManager = new PurchaseManager();
+        this.purchaseManager = new PurchaseManager(this);
     }
 
 
