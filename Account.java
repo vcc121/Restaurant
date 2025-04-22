@@ -94,3 +94,4 @@ public class Account implements HasMenu, Serializable {
             System.out.println("Deposit failed. Invalid amount.");
         }
     }
+}

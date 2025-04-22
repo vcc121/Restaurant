@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.*;
 
 public class Customer extends User {
-    protected Account checking;
+    protected Account account;
     protected PurchaseManager purchaseManager;
 
     public Customer(String userName, String password) {
