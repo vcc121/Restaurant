@@ -27,7 +27,7 @@ public class PurchaseManager implements HasMenu, Serializable {
         for (int i = 0; i < foodNames.length; i++) {
             sb.append((i + 1) + ") " + foodNames[i] + " - $" + String.format("%.2f", foodPrices[i]) + "\n");
         }
-        sb.append((foodNames.length + 1) ") View Order\n");
+        sb.append((foodNames.length + 1) + ") View Order\n");
         sb.append((checkoutOption) + ") Checkout\n");
         sb.append("Choose an option: ");
         return sb.toString();
