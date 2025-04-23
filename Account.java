@@ -27,7 +27,6 @@ public class Account implements HasMenu, Serializable {
             1) Check Balance
             2) Make a Deposit
             Please enter 0-2: 
-            
             """;
     }
     

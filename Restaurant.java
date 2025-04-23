@@ -82,7 +82,6 @@ public class Restaurant implements HasMenu, Serializable {
             1) Login as Customer
             2) Create new user
             Please enter 0-2: 
-            
             """;
     }
 
