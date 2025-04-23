@@ -30,6 +30,7 @@ public class Customer extends User {
             2) Get some eats!
             3) Change password
             Please enter 0-3: 
+            
             """;
     }
 
